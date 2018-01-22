@@ -4,6 +4,7 @@
     <keyboard-shortcut first-keystroke="shift alt back_space" />
     <keyboard-shortcut first-keystroke="ctrl y" />
   </action>
+  <action id="ChangesView.AddUnversioned" />
   <action id="CheckinProject" />
   <action id="CloseContent">
     <keyboard-shortcut first-keystroke="ctrl w" />
@@ -30,6 +31,7 @@
   <action id="DatabaseView.CopyTable" />
   <action id="DatabaseView.ShowDiff" />
   <action id="DecreaseColumnWidth" />
+  <action id="Diagram.DeselectAll" />
   <action id="Diff.UpdatedFiles" />
   <action id="Editor Redo">
     <keyboard-shortcut first-keystroke="ctrl y" />
@@ -154,6 +156,10 @@
     <keyboard-shortcut first-keystroke="f5" />
   </action>
   <action id="PreviousOccurence" />
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="ctrl alt l" />
+    <keyboard-shortcut first-keystroke="ctrl alt a" />
+  </action>
   <action id="ReopenClosedTab">
     <keyboard-shortcut first-keystroke="shift ctrl t" />
   </action>
