@@ -1,0 +1,29 @@
+<templateSet group="OAKS">
+  <template name="err" value="ini_set('display_errors', '1');&#10;ini_set('error_reporting', E_ALL);" shortcut="TAB" description="error_reporting" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="user_" value="$user_info = $db-&gt;getUserInfo($_SESSION['login_guid'],'user_guid');" description="getUserInfo" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="update" value="$data=array(&#10;&#10;);&#10;$condition=array(&#10;&#10;);&#10;$db-&gt;update($table,$data,$condition);" description="update" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="table" value="\$$field_name$_field = $this-&gt;tableField(&quot;$field_name$&quot;);" description="tableField" toReformat="false" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="show" value="echo &quot;&lt;pre&gt;&quot;;print_r($arr$);echo &quot;&lt;/pre&gt;&quot;;" description="print_r array pretty" toReformat="false" toShortenFQNames="true">
+    <variable name="arr" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
