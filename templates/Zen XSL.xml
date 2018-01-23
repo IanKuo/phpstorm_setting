@@ -157,10 +157,4 @@
   <template name="!!!" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;" description="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;" toReformat="true" toShortenFQNames="true" deactivated="true">
     <context />
   </template>
-  <template name="table" value="$tb = $this-&gt;table('$table_name$',$this-&gt;company_db);" description="table" toReformat="false" toShortenFQNames="true">
-    <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
 </templateSet>

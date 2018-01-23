@@ -14,7 +14,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="table" value="\$$field_name$_field = $this-&gt;tableField(&quot;$field_name$&quot;);" description="tableField" toReformat="false" toShortenFQNames="true">
+  <template name="table_" value="\$$field_name$_field = $this-&gt;tableField(&quot;$field_name$&quot;);" description="tableField" toReformat="false" toShortenFQNames="true">
     <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
@@ -22,6 +22,12 @@
   </template>
   <template name="show" value="echo &quot;&lt;pre&gt;&quot;;print_r($arr$);echo &quot;&lt;/pre&gt;&quot;;" description="print_r array pretty" toReformat="false" toShortenFQNames="true">
     <variable name="arr" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="table" value="$tb = $this-&gt;table('$table_name$',$this-&gt;company_db);" description="table" toReformat="false" toShortenFQNames="true">
+    <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
