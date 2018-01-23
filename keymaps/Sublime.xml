@@ -4,6 +4,11 @@
     <keyboard-shortcut first-keystroke="shift alt back_space" />
     <keyboard-shortcut first-keystroke="ctrl y" />
   </action>
+  <action id="AutoIndentLines">
+    <keyboard-shortcut first-keystroke="ctrl alt i" />
+    <keyboard-shortcut first-keystroke="ctrl alt a" />
+  </action>
+  <action id="ChangesView.AddUnversioned" />
   <action id="CheckinProject" />
   <action id="CloseContent">
     <keyboard-shortcut first-keystroke="ctrl w" />
@@ -30,6 +35,7 @@
   <action id="DatabaseView.CopyTable" />
   <action id="DatabaseView.ShowDiff" />
   <action id="DecreaseColumnWidth" />
+  <action id="Diagram.DeselectAll" />
   <action id="Diff.UpdatedFiles" />
   <action id="Editor Redo">
     <keyboard-shortcut first-keystroke="ctrl y" />
@@ -96,6 +102,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl close_bracket" />
   </action>
   <action id="FileChooser.GotoDesktop" />
+  <action id="FileChooser.NewFolder">
+    <keyboard-shortcut first-keystroke="alt insert" />
+  </action>
   <action id="FileChooser.TogglePathShowing" />
   <action id="FileStructurePopup">
     <keyboard-shortcut first-keystroke="ctrl r" />
@@ -113,6 +122,8 @@
   <action id="GotoAction">
     <keyboard-shortcut first-keystroke="shift ctrl p" />
   </action>
+  <action id="GotoChangedFile" />
+  <action id="GotoClass" />
   <action id="GotoDeclaration">
     <mouse-shortcut keystroke="button2" />
     <keyboard-shortcut first-keystroke="f12" />
@@ -144,6 +155,10 @@
   <action id="MissingInActions.PreviousWordEndWithSelection">
     <keyboard-shortcut first-keystroke="shift ctrl left" />
   </action>
+  <action id="NewElementSamePlace">
+    <keyboard-shortcut first-keystroke="ctrl alt insert" />
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
   <action id="NextOccurence" />
   <action id="OpenFile">
     <keyboard-shortcut first-keystroke="ctrl o" />
@@ -164,6 +179,9 @@
   <action id="ResizeToolWindowLeft" />
   <action id="ResizeToolWindowRight" />
   <action id="Resume" />
+  <action id="RevealIn">
+    <keyboard-shortcut first-keystroke="alt d" />
+  </action>
   <action id="SelectAllOccurrences">
     <keyboard-shortcut first-keystroke="shift ctrl alt j" />
     <keyboard-shortcut first-keystroke="alt f3" />
@@ -206,8 +224,15 @@
   <action id="TypeHierarchy" />
   <action id="UML.ApplyCurrentLayout" />
   <action id="Uml.ShowDiff" />
+  <action id="Vcs.ReformatCommitMessage">
+    <keyboard-shortcut first-keystroke="ctrl alt l" />
+  </action>
   <action id="Vcs.UpdateProject" />
   <action id="ViewSource" />
+  <action id="code.align">
+    <keyboard-shortcut first-keystroke="ctrl alt i" />
+    <keyboard-shortcut first-keystroke="ctrl alt a" />
+  </action>
   <action id="de.netnexus.CamelCasePlugin.ToggleCamelCase" />
   <action id="hg4idea.push" />
   <action id="osmedile.intellij.stringmanip.swap.SwapAction">
