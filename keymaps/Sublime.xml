@@ -4,6 +4,10 @@
     <keyboard-shortcut first-keystroke="shift alt back_space" />
     <keyboard-shortcut first-keystroke="ctrl y" />
   </action>
+  <action id="AutoIndentLines">
+    <keyboard-shortcut first-keystroke="ctrl alt i" />
+    <keyboard-shortcut first-keystroke="ctrl alt a" />
+  </action>
   <action id="ChangesView.AddUnversioned" />
   <action id="CheckinProject" />
   <action id="CloseContent">
@@ -165,10 +169,6 @@
     <keyboard-shortcut first-keystroke="f5" />
   </action>
   <action id="PreviousOccurence" />
-  <action id="ReformatCode">
-    <keyboard-shortcut first-keystroke="ctrl alt l" />
-    <keyboard-shortcut first-keystroke="ctrl alt a" />
-  </action>
   <action id="ReopenClosedTab">
     <keyboard-shortcut first-keystroke="shift ctrl t" />
   </action>
@@ -224,8 +224,15 @@
   <action id="TypeHierarchy" />
   <action id="UML.ApplyCurrentLayout" />
   <action id="Uml.ShowDiff" />
+  <action id="Vcs.ReformatCommitMessage">
+    <keyboard-shortcut first-keystroke="ctrl alt l" />
+  </action>
   <action id="Vcs.UpdateProject" />
   <action id="ViewSource" />
+  <action id="code.align">
+    <keyboard-shortcut first-keystroke="ctrl alt i" />
+    <keyboard-shortcut first-keystroke="ctrl alt a" />
+  </action>
   <action id="de.netnexus.CamelCasePlugin.ToggleCamelCase" />
   <action id="hg4idea.push" />
   <action id="osmedile.intellij.stringmanip.swap.SwapAction">
