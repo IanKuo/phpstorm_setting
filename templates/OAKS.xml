@@ -37,4 +37,19 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="$rs" value="$rs = $this-&gt;db_link-&gt;SelectLimit($stmt,$page_limit,($page-1)*$page_limit);&#10;if($rs &amp;&amp; $rs-&gt;RecordCount() &gt; 0){&#10;    &#10;}else{&#10;    return array();&#10;}" description="rs_selectLimit" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="rs_err" value="echo $this-&gt;db_link-&gt;ErrorMsg().&quot;&lt;br/&gt;&quot;;" description="rs_error" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="$rse" value="$rs = $this-&gt;db_link-&gt;Execute($stmt);&#10;if($rs &amp;&amp; $rs-&gt;RecordCount() &gt; 0){&#10;    return $rs-&gt;getAll();&#10;}else{&#10;    return array();&#10;}" description="Execute" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
