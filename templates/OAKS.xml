@@ -14,7 +14,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="table_" value="\$$field_name$_field = $this-&gt;tableField(&quot;$field_name$&quot;);" description="tableField" toReformat="false" toShortenFQNames="true">
+  <template name="table_" value="$$$field_name$_field = $this-&gt;tableField(&quot;$field_name$&quot;);" description="tableField" toReformat="false" toShortenFQNames="true">
     <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
@@ -28,6 +28,100 @@
   </template>
   <template name="table" value="$tb = $this-&gt;table('$table_name$',$this-&gt;company_db);" description="table" toReformat="false" toShortenFQNames="true">
     <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="debug" value="$db-&gt;db_link-&gt;debug = true;&#10;$db-&gt;db_link-&gt;debug = false;" description="debug" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="$rs" value="$rs = $this-&gt;db_link-&gt;SelectLimit($stmt,$page_limit,($page-1)*$page_limit);&#10;if($rs &amp;&amp; $rs-&gt;RecordCount() &gt; 0){&#10;    &#10;}else{&#10;    return array();&#10;}" description="rs_selectLimit" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="rs_err" value="echo $this-&gt;db_link-&gt;ErrorMsg().&quot;&lt;br/&gt;&quot;;" description="rs_error" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="$rse" value="$rs = $this-&gt;db_link-&gt;Execute($stmt);&#10;if($rs &amp;&amp; $rs-&gt;RecordCount() &gt; 0){&#10;    return $rs-&gt;getAll();&#10;}else{&#10;    return array();&#10;}" description="Execute" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="put" value="$file_id = $file-&gt;putText($mod_dir,$text_content);" description="putText" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="new" value="$tplObj-&gt;newTplBlock('$BLOCK_NAME$');&lt;!-- START BLOCK : $BLOCK_NAME$ --&gt;" description="newTplBlock" toReformat="false" toShortenFQNames="true">
+    <variable name="BLOCK_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="goto" value="$tplObj-&gt;gotoTplBlock(&quot;_ROOT&quot;);" description="gotoBlock" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="aff" value="$this-&gt;db_link-&gt;affected_rows()" description="affected_row" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ass" value="$tplObj-&gt;assignTplArray(array(&#10;&#9;&quot;&quot; =&gt; html_escape(),&#10;&#9;&quot;&quot; =&gt; html_escape(),&#10;&#9;&quot;&quot; =&gt; html_escape(),&#10;));" description="assignTplArray" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="date_o" value="$db-&gt;dateFormat($date$)" description="date_output" toReformat="false" toShortenFQNames="true">
+    <variable name="date" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="date_i" value="$db-&gt;inputDate2Ad($date$)" description="date_input" toReformat="false" toShortenFQNames="true">
+    <variable name="date" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="delete" value="$condition=array(&#10;    &quot;&quot; =&gt; &quot;&quot;,&#10;    &quot;&quot; =&gt; &quot;&quot;,&#10;);&#10;$db-&gt;delete('$table_name$', $condition);" description="delete" toReformat="false" toShortenFQNames="true">
+    <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="es" value="$$$var$ = $this-&gt;escapeString($$$var$);" description="escapeString" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="insert" value="$data=array(&#10;    &quot;&quot; =&gt; &quot;&quot;,&#10;    &quot;&quot; =&gt; &quot;&quot;,&#10;    &quot;&quot; =&gt; &quot;&quot;,&#10;);&#10;$db-&gt;insert_array('$table_name$',$data);" description="insert_array" toReformat="false" toShortenFQNames="true">
+    <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="gets" value="$data = $db-&gt;getSingleById('$table_name$','$key',$value);" description="getSingleById" toReformat="false" toShortenFQNames="true">
+    <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="get" value="$condition=array(&#10;    &quot;&quot; =&gt; &quot;&quot;,&#10;);&#10;$order=array(&#10;    &quot;&quot; =&gt; &quot;&quot;,&#10;);&#10;$page_param=array(&#10;    &quot;page&quot; =&gt; &quot;1&quot;,&#10;    &quot;page_limit&quot; =&gt; &quot;10&quot;,&#10;);&#10;$list = $db-&gt;getWhere('$table_name$',$condition,$order,$page_param);" description="getWhere" toReformat="false" toShortenFQNames="true">
+    <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="filedb" value="include_once(&quot;$ROOT_PATH/lib/upfile_lib.php&quot;);&#10;include_once(&quot;$ROOT_PATH/lib/common.php&quot;);&#10;$mod_dir = '$mod_dir$';&#9;//模組名稱&#10;$file = new UPFILE_DBA($_SESSION['company_uuid']);" description="new file db" toReformat="false" toShortenFQNames="true">
+    <variable name="mod_dir" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
