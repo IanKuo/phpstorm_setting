@@ -52,4 +52,9 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="putText" value="$file_id = $file-&gt;putText($mod_dir,$text_content);" description="putText" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
